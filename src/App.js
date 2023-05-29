@@ -43,8 +43,11 @@ function App() {
       image={Visa}
       bank="BNP"
       number="•••• •••• •••• 8845"
-      expiration="Expires 03/21"
+      expirationMonth={3}
+      expirationYear={21}
       owner="Maxence Bouret"
+      bgColor="rgb(17, 170, 153)"
+      color="white"
       />
     </div>
   );
