@@ -1,7 +1,7 @@
 import React from "react";
 function Rating(props) {
     const starsRating = Math.round(props.rating);
-    // crear funcion que hace el redondeo y despues se debe cumplir una funcion abajo
+    // crear funcion que hace el redondeo y despues se debe cumplir una funcion abajo con condiciones
     if (starsRating === 0) {
         return <div class="Rating">☆☆☆☆☆</div>
     }
