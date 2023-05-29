@@ -4,6 +4,7 @@ import Greetings from "./components/Greetings";
 import Random from "./components/Random";
 import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
+import Rating from "./components/Rating";
 import Visa from './assets/images/visa.png';
 
 function App() {
@@ -39,16 +40,23 @@ function App() {
       <BoxColor r={128} g={255} b={0} />
       <BoxColor r={324} g={235} b={0} />
       <h1>Credit card</h1>
-      <CreditCard 
-      image={Visa}
-      bank="BNP"
-      number="•••• •••• •••• 8845"
-      expirationMonth={3}
-      expirationYear={21}
-      owner="Maxence Bouret"
-      bgColor="rgb(17, 170, 153)"
-      color="white"
+      <CreditCard
+        image={Visa}
+        bank="BNP"
+        number="•••• •••• •••• 8845"
+        expirationMonth={3}
+        expirationYear={21}
+        owner="Maxence Bouret"
+        bgColor="rgb(17, 170, 153)"
+        color="white"
       />
+      <h1>Rating</h1>
+      <Rating rating={0} />
+      <Rating rating={1.4} />
+      <Rating rating={2} />
+      <Rating rating={3.4} />
+      <Rating rating={4.5} />
+      <Rating rating={5} />
     </div>
   );
 }
